@@ -1,0 +1,14 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "..\\..\\App.svelte",
+    "..\\..\\TodoList.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\n\timport TodoHeader from './components/TodoHeader.svelte';\n\timport TodoInput from './components/TodoInput.svelte';\n\timport TodoList from './components/TodoList.svelte';\n\timport TodoFooter from './components/TodoFooter.svelte';\n</script>\n\n<main>\n\t<TodoHeader/>\n\t<TodoInput/>\n\t<TodoList/>\n\t<TodoFooter/>\n</main>\n\n<style>\nmain {\n\ttext-align: center;\n}\n</style>",
+    "<script>\r\nimport { setTodo } from '../store';\r\n</script>\r\n<style>\r\n.finish {\r\n    background-color: blue;\r\n}\r\n.not {\r\n    background-color: gold;\r\n}\r\n</style>\r\n\r\n\r\n{#each $setTodo as {inputValue, complete}}\r\n    <p>\r\n        <i class=\"fas fa-check {complete === true? 'finish': 'not'}\"></i> \r\n        {inputValue}\r\n        <i class=\"fas fa-trash-alt\"></i>\r\n    </p>\r\n{/each}"
+  ],
+  "names": [],
+  "mappings": "AAeA,IAAI,cAAC,CAAC,AACL,UAAU,CAAE,MAAM,AACnB,CAAC;ACbD,OAAO,eAAC,CAAC,AACL,gBAAgB,CAAE,IAAI,AAC1B,CAAC,AACD,IAAI,eAAC,CAAC,AACF,gBAAgB,CAAE,IAAI,AAC1B,CAAC"
+}
