@@ -1,0 +1,7 @@
+{
+    "todoList": [
+        { "id": 0, "title": "Title", "status": "active" },
+        { "id": 1, "title": "Title2", "status": "active" },
+        { "id": 2, "title": "Title2", "status": "active" }
+    ]
+}

@@ -1,0 +1,5 @@
+{
+    //"parser": "babel-eslint",
+    //"parser": "@typescript-eslint/parser",
+    "extends": ["@vue/eslint-config-typescript", "plugin:vue/essential"/*, "eslint:recommended", "@vue/prettier"*/]
+}
